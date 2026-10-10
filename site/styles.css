@@ -415,6 +415,7 @@ dialog::backdrop { background: rgba(5,10,11,.76); backdrop-filter: blur(8px); }
   .page-footer { padding-left: 18px; padding-right: 18px; }
 }
 @media (max-width: 600px) {
+  .ambient-two { display: none; }
   .topbar { min-height: 62px; height: auto; padding: 8px 14px; }
   .brand { gap: 8px; }
   .brand-mark { width: 27px; height: 27px; }
