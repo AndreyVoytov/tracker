@@ -1,17 +1,5 @@
 window.TRACKER_PROJECTS = [
   {
-    id: "maskinery-idle",
-    title: "Maskinery Idle",
-    folder: "game-ggj-2026-mask",
-    genre: "Idle · crafting",
-    description: "Развивай мастерскую масок, открывай новые рецепты и автоматизируй производство.",
-    readiness: 92,
-    platforms: ["Web", "Mobile"],
-    stage: "Выложена",
-    url: "https://d954mas.itch.io/maskinery-idle",
-    icon: "./assets/icons/maskinery-idle.png"
-  },
-  {
     id: "mushrooms-sveta",
     title: "Грибы!",
     folder: "mushroomsSveta",
@@ -35,25 +23,14 @@ window.TRACKER_PROJECTS = [
   },
   {
     id: "mushrooms-new",
-    title: "Грибы! · новая версия",
+    title: "Башня хранителей",
     folder: "mushroomsNew",
     genre: "Puzzle · adventure",
-    description: "Параллельная ветка лесного приключения с обновлённой сборкой и экспериментами.",
+    description: "Восстанавливай волшебную башню, собирай хранителей и открывай новые леса и комнаты.",
     readiness: 73,
     platforms: ["Web", "Mobile"],
     stage: "Игровой прототип",
-    icon: "./assets/icons/mushrooms-new.png"
-  },
-  {
-    id: "soft-test-minigames",
-    title: "Mini-game Lab",
-    folder: "soft-test-task",
-    genre: "Mini-games",
-    description: "Три коротких эксперимента: карточная анимация, диалоговая игра и огненная сцена.",
-    readiness: 78,
-    platforms: ["Web"],
-    stage: "Игровой прототип",
-    icon: "./assets/icons/soft-test-minigames.png"
+    icon: "./assets/icons/guardian-tower.png"
   },
   {
     id: "arrow-trail",
