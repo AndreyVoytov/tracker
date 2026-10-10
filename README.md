@@ -33,9 +33,10 @@ https://andreyvoytov.github.io/tracker/ в список разрешённых r
 
 ## Публикация
 
-GitHub Actions публикует содержимое site/ в GitHub Pages при обновлении ветки
-main. После первого запуска workflow проверьте, что в Settings → Pages выбран
-источник GitHub Actions.
+Перед первой публикацией включите GitHub Pages в Settings → Pages и выберите
+GitHub Actions как источник сборки. GitHub ограничил автоматическое включение
+Pages для токена workflow. После этой настройки Actions будет публиковать
+содержимое site/ при каждом обновлении ветки main.
 
 ## Каталог
 
