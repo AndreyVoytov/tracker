@@ -482,7 +482,7 @@ dialog::backdrop { background: rgba(5,10,11,.76); backdrop-filter: blur(8px); }
   .login-dialog { width: calc(100% - 20px); max-height: calc(100dvh - 20px); overflow-y: auto; padding: 0 18px 18px; }
   .login-content input { min-height: 46px; font-size: 16px; }
 }
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .brand-name { letter-spacing: .1em; }
   .cloud-state { max-width: 90px; }
   .project-grid { grid-template-columns: minmax(0, 1fr); gap: 11px; }
