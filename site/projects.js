@@ -8,7 +8,8 @@ window.TRACKER_PROJECTS = [
     readiness: 88,
     platforms: ["Web", "Mobile"],
     stage: "Игровой прототип",
-    icon: "./assets/icons/mushrooms-sveta.png"
+    icon: "./assets/icons/mushrooms-sveta.png",
+    url: "https://andreyvoytov-mushrooms-sveta.pages.dev"
   },
   {
     id: "my-little-universe",
@@ -30,7 +31,8 @@ window.TRACKER_PROJECTS = [
     readiness: 73,
     platforms: ["Web", "Mobile"],
     stage: "Игровой прототип",
-    icon: "./assets/icons/guardian-tower.png"
+    icon: "./assets/icons/guardian-tower.png",
+    url: "https://andreyvoytov-guardian-tower.pages.dev"
   },
   {
     id: "arrow-trail",
@@ -41,7 +43,20 @@ window.TRACKER_PROJECTS = [
     readiness: 72,
     platforms: ["Web", "Mobile"],
     stage: "Игровой прототип",
-    icon: "./assets/icons/arrow-trail.png"
+    icon: "./assets/icons/arrow-trail.png",
+    url: "https://andreyvoytov-arrow-trail.pages.dev"
+  },
+  {
+    id: "zoo-arrows",
+    title: "Zoo Arrows",
+    folder: "zoo-art",
+    genre: "Puzzle · zoo builder",
+    description: "Решай головоломки со стрелками, открывай новые вольеры и превращай участок в яркий зоопарк.",
+    readiness: 58,
+    platforms: ["Web", "Mobile"],
+    stage: "Игровой прототип",
+    icon: "./assets/icons/zoo-arrows.png",
+    url: "https://andreyvoytov-zoo-arrows.pages.dev"
   },
   {
     id: "salon",
@@ -49,10 +64,11 @@ window.TRACKER_PROJECTS = [
     folder: "dress_game",
     genre: "Dress-up · casual",
     description: "Собирай яркие образы и готовь героиню к следующему выходу.",
-    readiness: 69,
+    readiness: 1,
     platforms: ["Web", "Mobile"],
     stage: "Игровой прототип",
-    icon: "./assets/icons/salon.png"
+    icon: "./assets/icons/salon.png",
+    url: "https://andreyvoytov-salon.pages.dev"
   },
   {
     id: "category-sort",
@@ -63,7 +79,8 @@ window.TRACKER_PROJECTS = [
     readiness: 54,
     platforms: ["Web", "Mobile"],
     stage: "Активная разработка",
-    icon: "./assets/icons/category-sort.png"
+    icon: "./assets/icons/category-sort.png",
+    url: "https://andreyvoytov-core-solitaire.pages.dev"
   },
   {
     id: "minecraft-idler",
@@ -71,21 +88,10 @@ window.TRACKER_PROJECTS = [
     folder: "minecraft_idler",
     genre: "Idle · exploration",
     description: "Исследуй острова, добывай ресурсы и развивай производство в кубическом мире.",
-    readiness: 56,
+    readiness: 10,
     platforms: ["Android"],
     stage: "Активная разработка",
     icon: "./assets/icons/minecraft-idler.png"
-  },
-  {
-    id: "age-of-fantasy",
-    title: "Age of Fantasy",
-    folder: "_aof",
-    genre: "Fantasy · strategy",
-    description: "Фэнтезийный игровой проект с мобильным клиентом, аккаунтами и рейтингом.",
-    readiness: 58,
-    platforms: ["Android", "Web"],
-    stage: "Активная разработка",
-    icon: "./assets/icons/age-of-fantasy.png"
   },
   {
     id: "car-drive",
@@ -93,10 +99,11 @@ window.TRACKER_PROJECTS = [
     folder: "basic-3d-car-game",
     genre: "Arcade · racing",
     description: "Уходи от препятствий, собирай монеты и удерживай темп на перспективной трассе.",
-    readiness: 61,
+    readiness: 1,
     platforms: ["Web", "Mobile"],
     stage: "Игровой прототип",
-    icon: "./assets/icons/car-drive.png"
+    icon: "./assets/icons/car-drive.png",
+    url: "https://andreyvoytov-car-drive.pages.dev"
   },
   {
     id: "slot-game",
@@ -107,7 +114,8 @@ window.TRACKER_PROJECTS = [
     readiness: 42,
     platforms: ["Web", "Mobile"],
     stage: "Ранняя сборка",
-    icon: "./assets/icons/slot-game.png"
+    icon: "./assets/icons/slot-game.png",
+    url: "https://andreyvoytov-phaser-slot-game.pages.dev"
   },
   {
     id: "rpg",
@@ -118,7 +126,8 @@ window.TRACKER_PROJECTS = [
     readiness: 36,
     platforms: ["Web", "Mobile"],
     stage: "Ранняя сборка",
-    icon: "./assets/icons/rpg.png"
+    icon: "./assets/icons/rpg.png",
+    url: "https://andreyvoytov-rpg.pages.dev"
   },
   {
     id: "vibe-island",
@@ -129,7 +138,8 @@ window.TRACKER_PROJECTS = [
     readiness: 38,
     platforms: ["Web", "Mobile"],
     stage: "Ранняя сборка",
-    icon: "./assets/icons/vibe-island.png"
+    icon: "./assets/icons/vibe-island.png",
+    url: "https://andreyvoytov-vibe-island.pages.dev"
   },
   {
     id: "isles-of-the-tides",
@@ -140,7 +150,8 @@ window.TRACKER_PROJECTS = [
     readiness: 31,
     platforms: ["Web", "Mobile"],
     stage: "Ранняя сборка",
-    icon: "./assets/icons/isles-of-the-tides.png"
+    icon: "./assets/icons/isles-of-the-tides.png",
+    url: "https://andreyvoytov-isles-of-the-tides.pages.dev"
   },
   {
     id: "vibe-island-2",
@@ -151,7 +162,8 @@ window.TRACKER_PROJECTS = [
     readiness: 26,
     platforms: ["Web", "Mobile"],
     stage: "Ранняя сборка",
-    icon: "./assets/icons/vibe-island-2.png"
+    icon: "./assets/icons/vibe-island-2.png",
+    url: "https://andreyvoytov-vibe-island-2.pages.dev"
   },
   {
     id: "master-of-elements",
@@ -162,6 +174,19 @@ window.TRACKER_PROJECTS = [
     readiness: 18,
     platforms: ["Web", "Mobile"],
     stage: "Концепт",
-    icon: "./assets/icons/master-of-elements.png"
+    icon: "./assets/icons/master-of-elements.png",
+    url: "https://andreyvoytov-master-of-elements.pages.dev"
+  },
+  {
+    id: "warrior-girls",
+    title: "Warrior Girls",
+    folder: "warrior_girls",
+    genre: "Adventure · action",
+    description: "Исследуй фэнтезийные локации, продвигайся по пути и сражайся с монстрами вместе с воительницей.",
+    readiness: 34,
+    platforms: ["Web", "Mobile"],
+    stage: "Игровой прототип",
+    icon: "./assets/icons/warrior-girls.png",
+    url: "https://andreyvoytov-warrior-girls.pages.dev"
   }
 ];
