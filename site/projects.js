@@ -147,7 +147,7 @@ window.TRACKER_PROJECTS = [
     folder: "punb",
     genre: "Adventure · island",
     description: "Путешествуй между островом и морем в компактном портретном приключении.",
-    readiness: 31,
+    readiness: 1,
     platforms: ["Web", "Mobile"],
     stage: "Ранняя сборка",
     icon: "./assets/icons/isles-of-the-tides.png",
