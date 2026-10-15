@@ -1,5 +1,17 @@
 window.TRACKER_PROJECTS = [
   {
+    id: "mushrooms-arcane",
+    title: "Грибы! — Arcane",
+    folder: "mushroomsSveta",
+    genre: "Puzzle · adventure",
+    description: "Отдельный живописный рескин: новые герои и локации, светлый акварельный UI, Manrope и Lora. Ветка reskin/arcane-watercolor.",
+    readiness: 88,
+    platforms: ["Web", "Mobile"],
+    stage: "Визуальная версия",
+    icon: "./assets/icons/mushrooms-arcane.png",
+    url: "https://andreyvoytov-mushrooms-arcane.pages.dev"
+  },
+  {
     id: "mushrooms-sveta",
     title: "Грибы!",
     folder: "mushroomsSveta",
