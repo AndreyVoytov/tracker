@@ -1,0 +1,46 @@
+.story-editor-topbar { height: 68px; }
+.editor-back-link { color: var(--muted); font-size: 11px; text-decoration: none; }
+.editor-back-link:hover { color: var(--lime); }
+.story-editor-shell { width: min(1540px, calc(100% - 48px)); margin: 27px auto 40px; }
+.story-editor-intro { margin-bottom: 18px; }
+.story-editor-kicker { color: var(--lime); font-size: 9px; font-weight: 800; letter-spacing: .18em; }
+.story-editor-intro h1 { margin: 7px 0 5px; font: 800 clamp(23px, 3vw, 34px)/1.1 var(--display); letter-spacing: -.045em; }
+.story-editor-intro p { max-width: 760px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.story-editor-status { margin-top: 12px; color: var(--muted); font-size: 10px; }
+.story-editor-status::before { content: ""; width: 7px; height: 7px; display: inline-block; margin-right: 8px; border-radius: 50%; background: #87958f; }
+.story-editor-status[data-tone="good"]::before { background: var(--lime); }
+.story-editor-status[data-tone="bad"]::before { background: var(--coral); }
+.story-editor-panel { padding: 13px; border: 1px solid var(--line); border-radius: 13px; background: rgba(24,35,38,.78); }
+.story-editor-toolbar { display: flex; flex-wrap: wrap; gap: 7px; }
+.editor-button { min-height: 34px; padding: 8px 11px; border: 1px solid var(--line); border-radius: 7px; color: #d7e1d8; background: #1a272a; cursor: pointer; font-size: 10px; font-weight: 700; }
+.editor-button:hover:not(:disabled) { border-color: rgba(198,239,118,.5); color: var(--lime); }
+.editor-button:disabled { opacity: .48; cursor: default; }
+.editor-button-primary { border-color: rgba(198,239,118,.45); color: #18251b; background: var(--lime); }
+.editor-button-primary:hover:not(:disabled) { color: #18251b; filter: brightness(1.06); }
+.editor-upload-label { display: flex; align-items: center; }
+.editor-upload-label input { display: none; }
+.story-editor-hint { margin: 10px 0 12px; color: #81928a; font-size: 9px; line-height: 1.6; }
+.story-editor-hint code { color: #c6ef76; }
+.story-table-scroll { max-height: calc(100dvh - 330px); min-height: 220px; overflow: auto; border: 1px solid var(--line); border-radius: 8px; scrollbar-color: #475a54 #182326; }
+.story-table { width: 100%; min-width: 1980px; border-collapse: separate; border-spacing: 0; table-layout: fixed; }
+.story-table th { position: sticky; top: 0; z-index: 1; padding: 9px 6px; border-bottom: 1px solid rgba(198,239,118,.25); color: #bbd297; background: #1c292b; text-align: left; font: 700 8px/1.25 ui-monospace,Consolas,monospace; }
+.story-table td { padding: 5px; border-bottom: 1px solid rgba(220,238,229,.06); background: rgba(255,255,255,.012); vertical-align: top; }
+.story-table tr:hover td { background: rgba(198,239,118,.035); }
+.story-cell { width: 100%; min-height: 34px; padding: 7px 6px; border: 1px solid rgba(220,238,229,.09); border-radius: 5px; color: var(--text); background: #121c1e; font-size: 9px; }
+textarea.story-cell { min-height: 72px; resize: vertical; line-height: 1.4; }
+.story-cell[type="number"] { min-width: 50px; }
+.story-enabled-cell { min-height: 34px; display: grid; place-items: center; }
+.story-enabled-cell input { width: 16px; height: 16px; accent-color: var(--lime); }
+.story-delete { width: 100%; min-height: 32px; border: 1px solid rgba(255,144,121,.22); border-radius: 5px; color: #ffad9c; background: rgba(255,144,121,.06); cursor: pointer; font-size: 9px; }
+.story-delete:hover { background: rgba(255,144,121,.14); }
+.story-editor-error { margin-top: 12px; padding: 10px 12px; border: 1px solid rgba(255,144,121,.28); border-radius: 8px; color: #ffc1b3; background: rgba(83,41,34,.27); font-size: 10px; line-height: 1.5; }
+.story-editor-footer { margin-top: 12px; color: #697c73; font-size: 9px; line-height: 1.5; }
+
+@media (max-width: 600px) {
+  .story-editor-topbar { height: auto; min-height: 60px; padding: 8px 14px; }
+  .story-editor-shell { width: calc(100% - 24px); margin: 20px auto 28px; }
+  .story-editor-intro p { font-size: 11px; }
+  .story-editor-panel { padding: 9px; }
+  .editor-button { min-height: 38px; font-size: 9px; }
+  .story-table-scroll { max-height: calc(100dvh - 390px); min-height: 180px; }
+}

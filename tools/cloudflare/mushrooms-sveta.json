@@ -1,0 +1,14 @@
+{
+  "accountId": "95c932141b4454d6ab28ef6f7693e7bc",
+  "projectName": "andreyvoytov-mushrooms-sveta",
+  "bucketName": "andreyvoytov-mushrooms-sveta-files",
+  "wranglerVersion": "4.151.0",
+  "sourceDirectory": "C:/proj/mushroomsSveta/.pages-dist",
+  "downloads": [
+    {
+      "file": "ideas2/downloads/puzzle-and-ideas-2026-10-06.zip",
+      "key": "ideas2/downloads/puzzle-and-ideas-2026-10-06.zip",
+      "contentType": "application/zip"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10191c">
+    <title>Сюжет Isles of the Tides — Studio Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css?v=isles-story-editor-20261011a">
+    <link rel="stylesheet" href="./isles-tides-editor.css?v=isles-story-editor-20261011a">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="./supabase-config.js"></script>
+    <script defer src="./isles-tides-editor.js?v=public-editing-20261015"></script>
+  </head>
+  <body>
+    <header class="topbar story-editor-topbar">
+      <a class="brand" href="./" aria-label="Studio Board">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span class="brand-name">STUDIO<span>BOARD</span></span>
+      </a>
+      <a class="editor-back-link" href="./?project=isles-of-the-tides">Вернуться к проекту ↗</a>
+    </header>
+    <main class="story-editor-shell">
+      <section class="story-editor-intro">
+        <span class="story-editor-kicker">ISLES OF THE TIDES · DESIGN TOOL</span>
+        <h1>Сюжетные повороты</h1>
+        <p>Редактируйте события и выборы в таблице. Скопируйте TSV прямо в Google Sheets или скачайте JSON, чтобы подключить локальный сценарий в билде.</p>
+        <div class="story-editor-status" id="editor-status" data-tone="muted" role="status" aria-live="polite">Подключаю базу Studio Board…</div>
+      </section>
+      <section class="story-editor-panel" aria-label="Редактор таблицы сюжетных событий">
+        <div class="story-editor-toolbar">
+          <button class="editor-button editor-button-primary" id="save-events" type="button" disabled>Сохранить изменения</button>
+          <button class="editor-button" id="add-event" type="button" disabled>+ Строка</button>
+          <button class="editor-button" id="copy-tsv" type="button" disabled>Копировать для Google Sheets</button>
+          <button class="editor-button" id="download-tsv" type="button" disabled>Скачать TSV</button>
+          <button class="editor-button" id="download-json" type="button" disabled>Скачать JSON для билда</button>
+          <label class="editor-button editor-upload-label">Загрузить TSV<input id="upload-tsv" type="file" accept=".tsv,text/tab-separated-values,text/plain" disabled></label>
+        </div>
+        <p class="story-editor-hint">ID маршрутов: <code>lagoon</code>, <code>reef</code>, <code>mangrove</code>, <code>observatory</code>, <code>tempest</code>, <code>moon-atoll</code>, <code>whale-graveyard</code>, <code>lighthouse</code>. Одна строка задаёт событие для номера рейса по указанному маршруту.</p>
+        <div class="story-table-scroll" id="table-scroll">
+          <table class="story-table" id="story-table">
+            <thead id="story-head"></thead>
+            <tbody id="story-body"></tbody>
+          </table>
+        </div>
+        <div class="story-editor-error" id="editor-error" hidden></div>
+      </section>
+      <footer class="story-editor-footer">Изменения из базы подхватываются игрой при следующем открытии экрана моря. Выбор режима JSON действует только в этом браузере.</footer>
+    </main>
+  </body>
+</html>

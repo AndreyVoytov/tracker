@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#10191c">
-    <meta name="description" content="Каталог игровых проектов, оценки готовности геймплея и рабочие задачи команды.">
+    <meta name="description" content="Игровые проекты, оценки готовности геймплея и рабочие задачи команды.">
     <title>Studio Board — игровые проекты</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css?v=mobile-overflow-20261010b">
+    <link rel="stylesheet" href="./styles.css?v=project-task-strips-20261013b">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script defer src="./projects.js"></script>
+    <script defer src="./projects.js?v=slot-goblin-preview-20261011b"></script>
     <script defer src="./supabase-config.js"></script>
-    <script defer src="./app.js"></script>
+    <script defer src="./app.js?v=public-editing-20261015"></script>
   </head>
   <body>
     <div class="ambient ambient-one"></div>
@@ -29,63 +29,15 @@
           <span class="state-dot"></span>
           <span id="cloud-state-text">Проверяю базу</span>
         </div>
-        <button class="account-button" id="account-button" type="button">
-          <span class="account-avatar">A</span>
-          <span id="account-label">Войти</span>
-        </button>
       </div>
     </header>
 
     <main class="page-shell">
-      <section class="hero">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-line"></span> ПОРТФЕЛЬ ИГР</div>
-          <h1>Идеи становятся<br><span>играми.</span></h1>
-          <p class="hero-description">Все проекты в одном месте: текущая готовность геймплея, целевые платформы и следующий шаг для каждой игры.</p>
-        </div>
-        <div class="hero-note">
-          <span class="note-orbit orbit-a"></span>
-          <span class="note-orbit orbit-b"></span>
-          <span class="note-star">✳</span>
-          <span class="note-label">СЕЙЧАС В РАБОТЕ</span>
-          <strong id="active-projects">—</strong>
-          <span class="note-caption">игровых проектов</span>
-        </div>
-      </section>
-
-      <section class="metrics" aria-label="Сводка по проектам">
-        <article class="metric-card metric-total">
-          <div class="metric-top"><span>В каталоге</span><span class="metric-icon">↗</span></div>
-          <strong id="metric-count">—</strong>
-          <small>игровых проектов</small>
-        </article>
-        <article class="metric-card metric-average">
-          <div class="metric-top"><span>Средняя готовность</span><span class="metric-icon">◌</span></div>
-          <strong id="metric-average">—<em>%</em></strong>
-          <small>по текущей оценке</small>
-        </article>
-        <article class="metric-card metric-tasks">
-          <div class="metric-top"><span>Открытые задачи</span><span class="metric-icon">☷</span></div>
-          <strong id="metric-tasks">—</strong>
-          <small id="metric-tasks-caption">войдите, чтобы увидеть задачи</small>
-        </article>
-      </section>
-
       <section class="catalog-section">
         <div class="section-heading">
           <div>
-            <div class="eyebrow section-eyebrow">КАТАЛОГ</div>
             <h2>Проекты <span id="visible-count">15</span></h2>
           </div>
-          <label class="sort-control">
-            <span>Сортировка</span>
-            <select id="sort-select" aria-label="Сортировка проектов">
-              <option value="readiness-desc">Готовность: сначала высокая</option>
-              <option value="readiness-asc">Готовность: сначала низкая</option>
-              <option value="name-asc">Название: А → Я</option>
-              <option value="tasks-desc">Больше открытых задач</option>
-            </select>
-          </label>
         </div>
 
         <div class="catalog-controls">
@@ -94,19 +46,21 @@
             <input id="search-input" type="search" placeholder="Найти проект..." autocomplete="off">
             <kbd>/</kbd>
           </label>
-          <div class="filter-pills" role="group" aria-label="Фильтр проектов">
-            <button type="button" class="filter-pill active" data-filter="all">Все</button>
-            <button type="button" class="filter-pill" data-filter="Web">Веб</button>
-            <button type="button" class="filter-pill" data-filter="Mobile">Мобильные</button>
-            <button type="button" class="filter-pill" data-filter="early">Ранние</button>
-          </div>
+          <label class="sort-control">
+            <select id="sort-select" aria-label="Порядок проектов">
+              <option value="readiness-desc">Готовность: сначала высокая</option>
+              <option value="readiness-asc">Готовность: сначала низкая</option>
+              <option value="name-asc">Название: А → Я</option>
+              <option value="tasks-desc">Больше открытых задач</option>
+            </select>
+          </label>
         </div>
 
         <div class="project-grid" id="project-grid" aria-live="polite"></div>
         <div class="empty-state" id="empty-state" hidden>
           <span>⌕</span>
           <strong>Ничего не нашлось</strong>
-          <p>Попробуйте изменить запрос или фильтр.</p>
+          <p>Попробуйте изменить запрос.</p>
         </div>
       </section>
     </main>
@@ -122,24 +76,6 @@
         <button class="icon-button close-dialog" type="button" aria-label="Закрыть">×</button>
       </div>
       <div id="project-detail"></div>
-    </dialog>
-
-    <dialog class="login-dialog" id="login-dialog" aria-labelledby="login-title">
-      <div class="dialog-topline">
-        <span class="dialog-kicker">ДОСТУП ВЛАДЕЛЬЦА</span>
-        <button class="icon-button close-login" type="button" aria-label="Закрыть">×</button>
-      </div>
-      <div class="login-content">
-        <div class="login-mark">✳</div>
-        <h2 id="login-title">Войти в рабочую область</h2>
-        <p>Отправим одноразовую ссылку на email владельца каталога механик.</p>
-        <form id="login-form">
-          <label for="login-email">Email владельца</label>
-          <input id="login-email" type="email" placeholder="name@example.com" required autocomplete="email">
-          <button class="primary-button login-submit" type="submit">Отправить ссылку <span>→</span></button>
-        </form>
-        <p class="login-message" id="login-message" role="status"></p>
-      </div>
     </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>

@@ -1,5 +1,5 @@
 -- Run this in the same Supabase project used by mushroomsSveta/.pages-deploy/mechanics.
--- First run that project's mechanics/supabase/setup.sql so is_mechanics_owner() exists.
+-- Tracker data can be read and edited without signing in.
 
 create table if not exists public.project_tracker_tasks (
   id uuid primary key default gen_random_uuid(),
@@ -16,15 +16,16 @@ create index if not exists project_tracker_tasks_project_created_idx
 
 alter table public.project_tracker_tasks enable row level security;
 revoke all on public.project_tracker_tasks from public, anon, authenticated;
-grant select, insert, update, delete on public.project_tracker_tasks to authenticated;
+grant select, insert, update, delete on public.project_tracker_tasks to anon, authenticated;
 
 drop policy if exists "Owner can manage project tracker tasks" on public.project_tracker_tasks;
-create policy "Owner can manage project tracker tasks"
+drop policy if exists "Anyone can manage project tracker tasks" on public.project_tracker_tasks;
+create policy "Anyone can manage project tracker tasks"
   on public.project_tracker_tasks
   for all
-  to authenticated
-  using (public.is_mechanics_owner())
-  with check (public.is_mechanics_owner());
+  to anon, authenticated
+  using (true)
+  with check (true);
 
 create table if not exists public.project_tracker_progress (
   project_id text primary key,
@@ -34,12 +35,13 @@ create table if not exists public.project_tracker_progress (
 
 alter table public.project_tracker_progress enable row level security;
 revoke all on public.project_tracker_progress from public, anon, authenticated;
-grant select, insert, update on public.project_tracker_progress to authenticated;
+grant select, insert, update on public.project_tracker_progress to anon, authenticated;
 
 drop policy if exists "Owner can manage project tracker progress" on public.project_tracker_progress;
-create policy "Owner can manage project tracker progress"
+drop policy if exists "Anyone can manage project tracker progress" on public.project_tracker_progress;
+create policy "Anyone can manage project tracker progress"
   on public.project_tracker_progress
   for all
-  to authenticated
-  using (public.is_mechanics_owner())
-  with check (public.is_mechanics_owner());
+  to anon, authenticated
+  using (true)
+  with check (true);

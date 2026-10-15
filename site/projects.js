@@ -114,8 +114,30 @@ window.TRACKER_PROJECTS = [
     readiness: 42,
     platforms: ["Web", "Mobile"],
     stage: "Ранняя сборка",
-    icon: "./assets/icons/slot-game.png",
+    icon: "./assets/icons/slot-game-goblin.png",
     url: "https://andreyvoytov-phaser-slot-game.pages.dev"
+  },
+  {
+    id: "auto-shop-idler",
+    title: "Auto Shop Idler",
+    folder: "auto-shop-idler",
+    genre: "Idle · tycoon · racing",
+    description: "Развивай магазин автотоваров и открывай ночные гонки в мета-игре.",
+    readiness: 11,
+    platforms: ["Web", "Mobile"],
+    stage: "Концепт",
+    icon: "./assets/icons/auto-shop-idler.png"
+  },
+  {
+    id: "fantasy-wasteland-rpg",
+    title: "Fantasy Wasteland RPG",
+    folder: "fantasy-wasteland-rpg",
+    genre: "RPG · post-apocalyptic fantasy",
+    description: "Исследуй постапокалиптический фэнтези-мир, его фракции и опасные пустоши.",
+    readiness: 11,
+    platforms: ["Web", "Mobile"],
+    stage: "Концепт",
+    icon: "./assets/icons/fantasy-wasteland-rpg.png"
   },
   {
     id: "rpg",
