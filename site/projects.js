@@ -35,6 +35,18 @@ window.TRACKER_PROJECTS = [
     icon: "./assets/icons/my-little-universe.png"
   },
   {
+    id: "my-little-universe-hollow",
+    title: "My Little Universe — Hollow",
+    folder: "My_Little_Universe",
+    genre: "Idle · adventure",
+    description: "Мрачный рисованный рескин первого мира с насекомыми, загадочными руинами и светящимися ресурсами. Отдельный веб-билд без внешних SDK и аналитики.",
+    readiness: 40,
+    platforms: ["Web"],
+    stage: "Визуальная версия",
+    icon: "./assets/icons/my-little-universe-hollow.png",
+    url: "https://andreyvoytov-my-little-universe-hollow.pages.dev"
+  },
+  {
     id: "mushrooms-new",
     title: "Башня хранителей",
     folder: "mushroomsNew",

@@ -32,6 +32,15 @@ publishable key; секреты Supabase в сайт не помещаются.
 
 ## Публикация
 
+Текущая версия Studio Board опубликована в Cloudflare Pages:
+`https://andreyvoytov-studio-board.pages.dev`. Из корня checkout:
+
+```powershell
+npm.cmd exec --yes --package=wrangler@4.151.0 -- wrangler pages deploy site --project-name andreyvoytov-studio-board --branch main
+```
+
+Для предварительной проверки используйте отдельную preview-ветку вместо `main`.
+
 Перед первой публикацией включите GitHub Pages в Settings → Pages и выберите
 GitHub Actions как источник сборки. GitHub ограничил автоматическое включение
 Pages для токена workflow. После этой настройки Actions будет публиковать
@@ -41,3 +50,13 @@ Pages для токена workflow. После этой настройки Actio
 
 Список проектов и стартовые проценты находятся в site/projects.js. Новые
 иконки лежат в site/assets/icons/.
+
+Новый проект добавляется и в `site/projects.js`, и отдельной записью в
+`project_tracker_projects`: база переопределяет поля только у известных сайту
+идентификаторов. Индивидуальная оценка хранится в `project_tracker_progress`.
+
+Карточка `my-little-universe-hollow` хранит отдельную веб-версию My Little Universe
+в рисованном мрачном стиле. Исходный проект остаётся в `C:\proj\My_Little_Universe`;
+сборка живёт в отдельной ветке и публикуется в Cloudflare Pages командой
+`tools/cloudflare/deploy-hollow.ps1`. Исходная карточка `my-little-universe`
+сохраняется отдельно.

@@ -1,4 +1,23 @@
-# mushroomsSveta: Pages and private R2 downloads
+# Cloudflare Pages and private R2 downloads
+
+## My Little Universe — Hollow publication
+
+The separate offline build uses `andreyvoytov-my-little-universe-hollow` on the
+same account. Supply the unpacked `hollow_offline_package` directory; the ZIP is
+not uploaded. Its classic-script archive parts remain below Pages' 25 MiB limit.
+
+```powershell
+.\tools\cloudflare\deploy-hollow.ps1 -SourceDirectory 'C:\path\to\hollow_offline_package' -DryRun
+.\tools\cloudflare\deploy-hollow.ps1 -SourceDirectory 'C:\path\to\hollow_offline_package'
+.\tools\cloudflare\deploy-hollow.ps1 -SourceDirectory 'C:\path\to\hollow_offline_package' -Branch main
+```
+
+The default branch `hollow-review` publishes a preview for browser verification.
+After verification, publish the same artifact with `-Branch main` to
+`https://andreyvoytov-my-little-universe-hollow.pages.dev`. This process does not
+merge the game source branch. `-CommitHash` can record its source revision.
+The Pages project already exists; no Wrangler `--force` or new permissions are
+needed for subsequent deployments.
 
 ## Zoo Arrows publication
 

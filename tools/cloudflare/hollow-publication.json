@@ -1,0 +1,34 @@
+{
+    "project":  "andreyvoytov-my-little-universe-hollow",
+    "source_branch":  "agent/hollow-web-fixes",
+    "artifact_sha256":  "c8a99a4f0f5d162ad836874ff10156f8014733ce9d6bcfb6653c54c635928d91",
+    "artifact_files":  82,
+    "artifact_bytes":  199299587,
+    "preview_url":  "https://25f5e06d.andreyvoytov-my-little-universe-hollow.pages.dev",
+    "production_url":  null,
+    "tracker_project_id":  "my-little-universe-hollow",
+    "tracker_production_url":  "https://andreyvoytov-studio-board.pages.dev",
+    "review_status":  "pending",
+    "game_master_merge":  false,
+    "preview_alias":  "https://hollow-review.andreyvoytov-my-little-universe-hollow.pages.dev",
+    "preview_http_byte_checks":  [
+                                     {
+                                         "file":  "index.html",
+                                         "sha256":  "b6e2d3271a7e879f227863f742a4b5c8d3e618fad5320012666a56a0a3358115",
+                                         "matches_source":  true
+                                     },
+                                     {
+                                         "file":  "offline_loader.js",
+                                         "sha256":  "db7e2975e467a7b81a9ee2097b243ddb6b2668a45c4733725040a1608b983157",
+                                         "matches_source":  true
+                                     },
+                                     {
+                                         "file":  "offline-manifest.json",
+                                         "sha256":  "efe45c31c387857fd2c3d2b3e30b5f5f47424d1522d3cebfaafc0134426858bb",
+                                         "matches_source":  true
+                                     }
+                                 ],
+    "tracker_deployment_url":  "https://507e7547.andreyvoytov-studio-board.pages.dev",
+    "tracker_production_projects":  20,
+    "tracker_review_status":  "pass"
+}
