@@ -1,20 +1,20 @@
 {
     "project":  "andreyvoytov-my-little-universe-hollow",
     "source_branch":  "agent/hollow-web-fixes",
-    "artifact_sha256":  "c8a99a4f0f5d162ad836874ff10156f8014733ce9d6bcfb6653c54c635928d91",
+    "artifact_sha256":  "0a24ec20250034107113d11e72aa641b1b6ef02b9e404bb37f6bdf15b0fa608f",
     "artifact_files":  82,
-    "artifact_bytes":  199299587,
-    "preview_url":  "https://25f5e06d.andreyvoytov-my-little-universe-hollow.pages.dev",
-    "production_url":  null,
+    "artifact_bytes":  199299798,
+    "preview_url":  "https://5396fa5f.andreyvoytov-my-little-universe-hollow.pages.dev",
+    "production_url":  "https://andreyvoytov-my-little-universe-hollow.pages.dev",
     "tracker_project_id":  "my-little-universe-hollow",
     "tracker_production_url":  "https://andreyvoytov-studio-board.pages.dev",
-    "review_status":  "pending",
+    "review_status":  "pass",
     "game_master_merge":  false,
     "preview_alias":  "https://hollow-review.andreyvoytov-my-little-universe-hollow.pages.dev",
     "preview_http_byte_checks":  [
                                      {
                                          "file":  "index.html",
-                                         "sha256":  "b6e2d3271a7e879f227863f742a4b5c8d3e618fad5320012666a56a0a3358115",
+                                         "sha256":  "3d36fed24b614da7f611821a312bb41c6bc2ffc25c7990cb797aa7edc7a3cd03",
                                          "matches_source":  true
                                      },
                                      {
@@ -24,11 +24,60 @@
                                      },
                                      {
                                          "file":  "offline-manifest.json",
-                                         "sha256":  "efe45c31c387857fd2c3d2b3e30b5f5f47424d1522d3cebfaafc0134426858bb",
+                                         "sha256":  "42ba844e6970f94384a6c73e856496801ddffd03816313e4084a698aa1351be1",
                                          "matches_source":  true
                                      }
                                  ],
     "tracker_deployment_url":  "https://507e7547.andreyvoytov-studio-board.pages.dev",
     "tracker_production_projects":  20,
-    "tracker_review_status":  "pass"
+    "tracker_review_status":  "pass",
+    "tracker_integration_commit":  "2ba17f6",
+    "production_deployment_url":  "https://93a71dbe.andreyvoytov-my-little-universe-hollow.pages.dev",
+    "production_http_status":  200,
+    "production_http_byte_checks":  [
+                                        {
+                                            "file":  "index.html",
+                                            "sha256":  "3d36fed24b614da7f611821a312bb41c6bc2ffc25c7990cb797aa7edc7a3cd03",
+                                            "matches_source":  true
+                                        },
+                                        {
+                                            "file":  "offline_loader.js",
+                                            "sha256":  "db7e2975e467a7b81a9ee2097b243ddb6b2668a45c4733725040a1608b983157",
+                                            "matches_source":  true
+                                        },
+                                        {
+                                            "file":  "dmloader.js",
+                                            "sha256":  "b15ac6d95ecffb4bd142423c0a39fac86907b24e01b1cc4972ce664c96913521",
+                                            "matches_source":  true
+                                        },
+                                        {
+                                            "file":  "Universe_wasm.js",
+                                            "sha256":  "d0f8c12519b6a1394d2261d60c28aec7790b04975ee0294901dd7edb33fdb74f",
+                                            "matches_source":  true
+                                        },
+                                        {
+                                            "file":  "offline-manifest.json",
+                                            "sha256":  "42ba844e6970f94384a6c73e856496801ddffd03816313e4084a698aa1351be1",
+                                            "matches_source":  true
+                                        },
+                                        {
+                                            "file":  "data/Universe.wasm.js",
+                                            "sha256":  "6a6883cbfb398d71219f6dda9a4b24008e626e5c9c9017d9a956dce58777ea22",
+                                            "matches_source":  true
+                                        },
+                                        {
+                                            "file":  "data/archive/archive_files.json.js",
+                                            "sha256":  "f63561fa995f9ae2a95dfc5d35e79e35009a3bd7b08f59b23cfeb43495c3ee0a",
+                                            "matches_source":  true
+                                        },
+                                        {
+                                            "file":  "data/archive/game0.projectc.js",
+                                            "sha256":  "5350d7fc64c3c0a7011026fa15170195b267c3651f0c91127c8c3694f19fb375",
+                                            "matches_source":  true
+                                        }
+                                    ],
+    "source_commit":  "5120b26",
+    "published_utc":  "2026-10-16T22:44:22.1285961Z",
+    "tracker_database_url":  "https://andreyvoytov-my-little-universe-hollow.pages.dev",
+    "tracker_database_updated":  true
 }

@@ -1,10 +1,10 @@
 {
-    "recorded_utc":  "2026-10-16T21:51:49.5686957Z",
+    "recorded_utc":  "2026-10-16T22:45:09.5892735Z",
     "project_id":  "my-little-universe-hollow",
     "title":  "My Little Universe — Hollow",
     "local_path":  "C:/proj/My_Little_Universe",
     "repository_url":  "https://github.com/KassiaL/My_Little_Universe.git",
-    "url":  null,
+    "url":  "https://andreyvoytov-my-little-universe-hollow.pages.dev",
     "gameplay_readiness":  40,
     "platforms":  [
                       "Web"
