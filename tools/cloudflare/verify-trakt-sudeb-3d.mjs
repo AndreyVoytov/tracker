@@ -6,6 +6,7 @@ import {createHash} from 'node:crypto';
 const source=path.resolve(process.argv[2]??'C:/proj/trakt_sudeb_3d');
 const base=(process.argv[3]??'https://andreyvoytov-trakt-sudeb-3d.pages.dev').replace(/\/$/,'');
 const deploymentUrl=process.argv[4]??base;
+const reportFile=path.resolve(process.argv[5]??path.join(source,'reports/road-perspective/rider-cities/publication-checks.json'));
 const {perspectiveRoadAssets}=await import(pathToFileURL(path.join(source,'app/game/perspectiveRoadModel.ts')));
 const {roadShellAssets,combatArtAssets}=await import(pathToFileURL(path.join(source,'app/game/assetLoader.ts')));
 const sha=b=>createHash('sha256').update(b).digest('hex'),checks=[],paths=new Set([...roadShellAssets,...combatArtAssets,...['meadow','forest','marsh','ash','alpine'].flatMap(perspectiveRoadAssets)]);
@@ -32,5 +33,6 @@ for(let offset=0;offset<all.length;offset+=6){
  for(const result of batch){if(result.status==='rejected')throw result.reason;checks.push(result.value);}
 }
 const report={productionUrl:base+'/',deploymentUrl,checkedAt:new Date().toISOString(),checks};
-await fs.writeFile(path.join(source,'reports/road-perspective/rider-cities/publication-checks.json'),JSON.stringify(report,null,2)+'\n');
+await fs.mkdir(path.dirname(reportFile),{recursive:true});
+await fs.writeFile(reportFile,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({productionUrl:report.productionUrl,exactFiles:checks.length-2,htmlPages:2},null,2));

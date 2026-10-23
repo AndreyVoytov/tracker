@@ -20,7 +20,7 @@ $roadDeployArguments = @(
     'exec', '--yes', ('--package=wrangler@' + $CloudflareSettings.wranglerVersion), '--',
     'wrangler', 'pages', 'deploy', $roadSourceRoot,
     '--project-name', $roadProjectName, '--branch', $Branch,
-    '--commit-dirty=false', '--commit-message', 'Trakt Sudeb 3D: riding, weather and layered cities'
+    '--commit-dirty=false', '--commit-message', 'Trakt Sudeb 3D: road visuals and gameplay'
 )
 if ($CommitHash) { $roadDeployArguments += @('--commit-hash', $CommitHash) }
 if ($DryRun) {
