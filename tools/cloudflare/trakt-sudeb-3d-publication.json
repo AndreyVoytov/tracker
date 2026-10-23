@@ -1,9 +1,9 @@
 {
   "gameProject": "andreyvoytov-trakt-sudeb-3d",
   "sourceDirectory": "C:/proj/trakt_sudeb_3d",
-  "sourceCommit": "1ed6b3f257da7e90a16a236ec2075b1d47a4196f",
+  "sourceCommit": "829ed6231f2f65291840148b7062cb659d59be56",
   "productionUrl": "https://andreyvoytov-trakt-sudeb-3d.pages.dev/",
-  "deploymentUrl": "https://d8999814.andreyvoytov-trakt-sudeb-3d.pages.dev",
+  "deploymentUrl": "https://a521c5f7.andreyvoytov-trakt-sudeb-3d.pages.dev",
   "trackerUrl": "https://andreyvoytov-studio-board.pages.dev/?project=trakt-sudeb-3d",
   "trackerDeploymentUrl": "https://77744df4.andreyvoytov-studio-board.pages.dev",
   "trackerReadback": {
@@ -47,10 +47,10 @@
   ],
   "checkedAt": "2026-10-23T16:44:06.341Z",
   "lastGameVerification": {
-    "checkedAt": "2026-10-23T20:28:04.299Z",
+    "checkedAt": "2026-10-23T21:43:48.792Z",
     "htmlPages": 2,
     "exactCodeAndArtFiles": 151,
-    "report": "C:/proj/trakt_sudeb_3d/reports/road-perspective/depth-life/publication-checks.json",
-    "iteration": "depth-life"
+    "report": "C:/proj/trakt_sudeb_3d/reports/road-perspective/visibility-city/publication-checks.json",
+    "iteration": "visibility-city"
   }
 }
