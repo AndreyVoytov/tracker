@@ -1,0 +1,49 @@
+{
+  "gameProject": "andreyvoytov-trakt-sudeb-3d",
+  "sourceDirectory": "C:/proj/trakt_sudeb_3d",
+  "sourceCommit": "0890642470757b4253a5e75f115ffb7899e8fad7",
+  "productionUrl": "https://andreyvoytov-trakt-sudeb-3d.pages.dev/",
+  "deploymentUrl": "https://7ef50703.andreyvoytov-trakt-sudeb-3d.pages.dev",
+  "trackerUrl": "https://andreyvoytov-studio-board.pages.dev/?project=trakt-sudeb-3d",
+  "trackerDeploymentUrl": "https://77744df4.andreyvoytov-studio-board.pages.dev",
+  "trackerReadback": {
+    "project_id": "trakt-sudeb-3d",
+    "title": "Тракт Судеб 3D",
+    "folder": "trakt_sudeb_3d",
+    "url": "https://andreyvoytov-trakt-sudeb-3d.pages.dev/",
+    "stage": "Опубликовано · 3D-дорога"
+  },
+  "trackerChecks": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 3821,
+      "sha256": "dbab9785044f19069d49982eb7733e0aede1eab52962f974d5cfc77306300513"
+    },
+    {
+      "path": "projects.js",
+      "status": 200,
+      "bytes": 12054,
+      "sha256": "8fa537354385be0e377b4b585159b0b0c21e455596d9458212e14e5788250501"
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 30546,
+      "sha256": "d8b800684db9d08dfd82e2cf61e31ca777998420e6c4c31ac7d0f10dc4df2d06"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 25021,
+      "sha256": "64ea9c13a6177a1236f702709ec669938039e3808dca0cfa29b87adbdf38dcd4"
+    },
+    {
+      "path": "assets/icons/rpg.png",
+      "status": 200,
+      "bytes": 2509312,
+      "sha256": "8f071bfb9ad722256fb43e044e35f58c8b0e6de71870c1678019e260375969f7"
+    }
+  ],
+  "checkedAt": "2026-10-23T16:44:06.341Z"
+}

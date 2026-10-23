@@ -1,5 +1,17 @@
 window.TRACKER_PROJECTS = [
   {
+    id: "trakt-sudeb-3d",
+    title: "Тракт Судеб 3D",
+    folder: "trakt_sudeb_3d",
+    genre: "RPG · путешествие",
+    description: "Отдельная версия Тракта Судеб: перспективная дорога, пять глав по 140 экранов, плавная погода, всадник и города у финала глав. Лёгкие находки в пути и редкие обязательные бои.",
+    readiness: 90,
+    platforms: ["Web", "Mobile"],
+    stage: "Опубликовано · 3D-дорога",
+    icon: "./assets/icons/rpg.png",
+    url: "https://andreyvoytov-trakt-sudeb-3d.pages.dev/"
+  },
+  {
     id: "mushrooms-arcane",
     title: "Грибы! — Arcane",
     folder: "mushroomsSveta",

@@ -51,6 +51,12 @@ Pages для токена workflow. После этой настройки Actio
 Список проектов и стартовые проценты находятся в site/projects.js. Новые
 иконки лежат в site/assets/icons/.
 
+`trakt-sudeb-3d` — отдельная перспективная версия Тракта Судеб из
+`C:\proj\trakt_sudeb_3d`. Подготовленная статическая сборка `out/` публикуется
+через `tools/cloudflare/deploy-trakt-sudeb-3d.ps1` в отдельный Pages-проект.
+`node tools/cloudflare/register-trakt-sudeb-3d.mjs` сохраняет только её карточку
+в общей базе, не заменяя исходную RPG и существующие оценки готовности.
+
 Новый проект добавляется и в `site/projects.js`, и отдельной записью в
 `project_tracker_projects`: база переопределяет поля только у известных сайту
 идентификаторов. Индивидуальная оценка хранится в `project_tracker_progress`.
