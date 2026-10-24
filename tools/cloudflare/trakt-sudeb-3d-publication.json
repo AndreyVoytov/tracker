@@ -1,9 +1,9 @@
 {
   "gameProject": "andreyvoytov-trakt-sudeb-3d",
   "sourceDirectory": "C:/proj/trakt_sudeb_3d",
-  "sourceCommit": "7d3568329999be06e09612a96d63f9d286b365cb",
+  "sourceCommit": "aba46baf6b955060e5287c75945bccef6bf2a44f",
   "productionUrl": "https://andreyvoytov-trakt-sudeb-3d.pages.dev/",
-  "deploymentUrl": "https://4bdd6fc2.andreyvoytov-trakt-sudeb-3d.pages.dev",
+  "deploymentUrl": "https://777aafa1.andreyvoytov-trakt-sudeb-3d.pages.dev",
   "trackerUrl": "https://andreyvoytov-studio-board.pages.dev/?project=trakt-sudeb-3d",
   "trackerDeploymentUrl": "https://77744df4.andreyvoytov-studio-board.pages.dev",
   "trackerReadback": {
@@ -47,11 +47,11 @@
   ],
   "checkedAt": "2026-10-23T16:44:06.341Z",
   "lastGameVerification": {
-    "checkedAt": "2026-10-24T08:42:44.873Z",
+    "checkedAt": "2026-10-24T20:56:32.397Z",
     "htmlPages": 2,
     "exactCodeAndArtFiles": 151,
-    "report": "C:/proj/trakt_sudeb_3d/reports/road-perspective/mobile-performance/publication-checks.json",
-    "immutableReport": "C:/proj/trakt_sudeb_3d/reports/road-perspective/mobile-performance/immutable-publication-checks.json",
-    "iteration": "mobile-performance"
+    "report": "C:/proj/trakt_sudeb_3d/reports/road-perspective/gpu-and-sharpness/publication-checks.json",
+    "immutableReport": "C:/proj/trakt_sudeb_3d/reports/road-perspective/gpu-and-sharpness/immutable-publication-checks.json",
+    "iteration": "gpu-and-sharpness"
   }
 }
