@@ -1,9 +1,9 @@
 {
   "gameProject": "andreyvoytov-trakt-sudeb-3d",
   "sourceDirectory": "C:/proj/trakt_sudeb_3d",
-  "sourceCommit": "829ed6231f2f65291840148b7062cb659d59be56",
+  "sourceCommit": "5fadf9dd6d7451841133d4ca90f57bca202c2826",
   "productionUrl": "https://andreyvoytov-trakt-sudeb-3d.pages.dev/",
-  "deploymentUrl": "https://a521c5f7.andreyvoytov-trakt-sudeb-3d.pages.dev",
+  "deploymentUrl": "https://6ba6b864.andreyvoytov-trakt-sudeb-3d.pages.dev",
   "trackerUrl": "https://andreyvoytov-studio-board.pages.dev/?project=trakt-sudeb-3d",
   "trackerDeploymentUrl": "https://77744df4.andreyvoytov-studio-board.pages.dev",
   "trackerReadback": {
@@ -47,10 +47,11 @@
   ],
   "checkedAt": "2026-10-23T16:44:06.341Z",
   "lastGameVerification": {
-    "checkedAt": "2026-10-23T21:43:48.792Z",
+    "checkedAt": "2026-10-24T00:40:47.158Z",
     "htmlPages": 2,
     "exactCodeAndArtFiles": 151,
-    "report": "C:/proj/trakt_sudeb_3d/reports/road-perspective/visibility-city/publication-checks.json",
-    "iteration": "visibility-city"
+    "report": "C:/proj/trakt_sudeb_3d/reports/road-perspective/chapter-polish-20/publication-checks.json",
+    "immutableReport": "C:/proj/trakt_sudeb_3d/reports/road-perspective/chapter-polish-20/immutable-publication-checks.json",
+    "iteration": "chapter-polish-20"
   }
 }
