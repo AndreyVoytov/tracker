@@ -1,9 +1,9 @@
 {
   "gameProject": "andreyvoytov-trakt-sudeb-3d",
   "sourceDirectory": "C:/proj/trakt_sudeb_3d",
-  "sourceCommit": "93425adfb533b83dc75cd7b35ebf49aaecfe40ce",
+  "sourceCommit": "be948bafeed4cbcc649de2ee969b2c0f73e7ee6d",
   "productionUrl": "https://andreyvoytov-trakt-sudeb-3d.pages.dev/",
-  "deploymentUrl": "https://b9f98370.andreyvoytov-trakt-sudeb-3d.pages.dev",
+  "deploymentUrl": "https://16de186b.andreyvoytov-trakt-sudeb-3d.pages.dev",
   "trackerUrl": "https://andreyvoytov-studio-board.pages.dev/?project=trakt-sudeb-3d",
   "trackerDeploymentUrl": "https://77744df4.andreyvoytov-studio-board.pages.dev",
   "trackerReadback": {
@@ -47,18 +47,17 @@
   ],
   "checkedAt": "2026-10-23T16:44:06.341Z",
   "lastGameVerification": {
-    "iteration": "depth-tutorial-v2",
-    "checkedAt": "2026-10-27T09:20:50.098Z",
-    "report": "C:/proj/trakt_sudeb_3d/reports/road-perspective/depth-tutorial-v2/production-verification.json",
-    "immutableReport": "C:/proj/trakt_sudeb_3d/reports/road-perspective/depth-tutorial-v2/deployment-verification.json",
-    "visualReport": "C:/proj/trakt_sudeb_3d/reports/road-perspective/depth-tutorial-v2/README.md",
+    "iteration": "caravan-v3",
+    "checkedAt": "2026-10-27T10:27:47.253Z",
+    "report": "C:/proj/trakt_sudeb_3d/reports/road-perspective/caravan-v3/production-verification.json",
+    "immutableReport": "C:/proj/trakt_sudeb_3d/reports/road-perspective/caravan-v3/deployment-verification.json",
+    "visualReport": "C:/proj/trakt_sudeb_3d/reports/road-perspective/caravan-v3/README.md",
     "htmlPages": 2,
-    "exactCodeAndArtFiles": 153,
+    "exactCodeAndArtFiles": 152,
     "additionalAssets": 2,
-    "gameTests": 214,
+    "gameTests": 221,
     "exportTests": 18,
-    "chapterScreens": 140,
-    "chapterBattles": 7,
-    "visualRounds": 10
+    "finalTargetedTests": 36,
+    "newArtBytes": 336202
   }
 }
