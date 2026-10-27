@@ -1,9 +1,9 @@
 {
   "gameProject": "andreyvoytov-trakt-sudeb-3d",
   "sourceDirectory": "C:/proj/trakt_sudeb_3d",
-  "sourceCommit": "db09f619064481a0004ffeb4820c4e08034c84b4",
+  "sourceCommit": "daaee3bd0f4df74b983012d5c948331e94164c27",
   "productionUrl": "https://andreyvoytov-trakt-sudeb-3d.pages.dev/",
-  "deploymentUrl": "https://3077f86d.andreyvoytov-trakt-sudeb-3d.pages.dev",
+  "deploymentUrl": "https://3a037812.andreyvoytov-trakt-sudeb-3d.pages.dev",
   "trackerUrl": "https://andreyvoytov-studio-board.pages.dev/?project=trakt-sudeb-3d",
   "trackerDeploymentUrl": "https://77744df4.andreyvoytov-studio-board.pages.dev",
   "trackerReadback": {
@@ -47,14 +47,15 @@
   ],
   "checkedAt": "2026-10-23T16:44:06.341Z",
   "lastGameVerification": {
-    "iteration": "road-look-v4",
-    "checkedAt": "2026-10-27T11:43:20.795Z",
-    "report": "C:/proj/trakt_sudeb_3d/reports/road-perspective/road-look-v4/production-verification.json",
-    "visualReport": "C:/proj/trakt_sudeb_3d/reports/road-perspective/road-look-v4/README.md",
+    "iteration": "side-layout-v5",
+    "checkedAt": "2026-10-27T13:28:49.350Z",
+    "report": "C:/proj/trakt_sudeb_3d/reports/road-perspective/side-layout-v5/production-verification.json",
+    "visualReport": "C:/proj/trakt_sudeb_3d/reports/road-perspective/side-layout-v5/README.md",
     "htmlPages": 2,
-    "exactCodeAndArtFiles": 152,
-    "finalTargetedTests": 18,
+    "exactCodeAndArtFiles": 154,
+    "gameTests": 228,
+    "finalTargetedTests": 29,
     "exportTests": 18,
-    "newArtBytes": 0
+    "newArtBytes": 999158
   }
 }
